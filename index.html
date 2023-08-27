@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <form class="js-form" method="post" autocomplete="off">
+                <input class="js-inp" type="search" name="user-country" placeholder="Search Your Country">
+                <button class="btn-form" type="submit"></button>
+            </form>
+            <h1 class="js-country">Tashkent</h1>
+            <div class="wrapper"></div>
+        </div>
+        <ul class="weather-list"></ul>
+        <div class="rainyDay">
+            <div class="umbrella">
+                <input id='panel' type='checkbox'>
+                <label class='panel' for='panel'></label>
+                <div class="stick"></div>
+            </div>
+            <div class="rain">
+                <div class="dropletOne"></div>
+                <div class="dropletTwo"></div>
+                <div class="dropletThree"></div>
+                <div class="dropletFour"></div>
+                <div class="dropletFive"></div>
+            </div>
+        </div>
+    </section>
+    <template class="js-template1">
+        <div class="box">
+            <img class="weather-img" src="./images/cloudy.gif" alt="">
+            <p class="weather-name">Cloudy</p>
+            <p class="country-name">Tashkent</p>
+            <h3 class="weather-gradus">28 c</h3>
+            <a class="btn-info" href="" target="blank">More Info</a>
+        </div>
+        <div class="box2">
+            <div class="child-box">
+                <img class="weather-img2" src="./images/drop.gif" alt="">
+                <p class="humanidity-text">Humanidity :<span class="humanidity-span">50%</span></p>
+            </div>
+            <div class="child-box">
+                <img class="weather-img2" src="./images/wind2.gif" alt="">
+                <p class="air-text">Air Pressure :<span class="air-span">50%</span></p>
+            </div>
+            <div class="child-box">
+                <img class="weather-img2" src="./images/wind.gif" alt="">
+                <p class="wind-text">Wind Speed :<span class="wind-span">50%</span></p>
+            </div>
+        </div>
+    </template>
+    <template class="js-template2">
+        <li class="weather-item">
+            <span class="weather-span">
+                <p class="time-weather"></p>
+                <h3 class="weather-gradus1"></h3>
+            </span>
+        </li>
+    </template>
+    <script src="./js/script.js"></script>
+</body>
+</html>
